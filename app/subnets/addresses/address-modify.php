@@ -419,7 +419,7 @@ function validate_mac (ip, mac, sectionId, vlanId, id) {
 	# fetch all states
 	$ip_types = (array) $Addresses->addresses_types_fetch();
 	# default type
-	if(!is_numeric(@$address['state'])) 		{ $address['state'] = 2; } // online
+	if(!is_numeric(@$address['state'])) 		{ $address['state'] = 3; } // Reserved
 
 	print '<tr>'. "\n";
 	print '	<td>'._('Tag').'</td>'. "\n";
